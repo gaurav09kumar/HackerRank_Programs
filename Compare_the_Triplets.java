@@ -3,16 +3,15 @@ package programs;
 import java.io.*;
 import java.util.*;
 
-public class Compare_the_Triplets {
+public class Solution {
 	static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
 		List<Integer> l1 = new ArrayList<Integer>();
 		int alice = 0, bob = 0;
 		for (int i = 0; i < a.size(); i++) {
-			if (a.get(i) == b.get(i)) {
+			if (a.get(i) < b.get(i)) {
+				bob++;
 			} else if (a.get(i) > b.get(i)) {
 				alice++;
-			} else {
-				bob++;
 			}
 		}
 		l1.add(alice);
