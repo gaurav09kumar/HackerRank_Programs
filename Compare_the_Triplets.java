@@ -3,7 +3,7 @@ package programs;
 import java.io.*;
 import java.util.*;
 
-public class Compare the Triplets {
+public class Compare_the_Triplets {
 	static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
 		List<Integer> l1 = new ArrayList<Integer>();
 		int alice = 0, bob = 0;
